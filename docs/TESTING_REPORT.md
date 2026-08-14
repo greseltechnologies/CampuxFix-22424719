@@ -133,19 +133,27 @@ The shared-data security cases are explicitly pending because the public demonst
 
 The production bundle is small enough for a demonstration SPA and rendered promptly in the live browser. Responsive CSS covers 1080px, 820px and 560px breakpoints down to a 320px minimum. Labels, visible focus, text badges and role names support keyboard/screen-reader interpretation. Formal Lighthouse, slow-network, load, Safari/Firefox and assistive-technology sessions remain appropriate before a broad pilot.
 
-## 12. User acceptance test script
+## 12. Project-owner user acceptance test
 
-Ask a real student/lecturer representative and a facilities representative to perform the following and record date, participant role, result and comment:
+**Participant:** Ishmael Essilfie  
+**Role:** Project Owner / Stakeholder  
+**Date:** 14 August 2026  
+**Environment:** Live application at `https://campusfix-22424719.vercel.app`  
+**Decision:** Accepted for examination demonstration
 
-1. Submit a natural-language hazard; check whether AI suggestions are understandable and editable.
-2. Decide whether a displayed similar report is the same problem.
-3. Find the issue through search and explain its status without assistance.
-4. As maintenance, identify the next permitted action and add a work note.
-5. As reporter, verify and rate a repair.
-6. Ask the assistant an issue-status question and judge whether the answer is supported by the record.
+The participant reviewed the live outcomes below and confirmed acceptance. This is a project-owner acceptance session, not an independently witnessed multi-user study. That limitation is recorded so the evidence is not overstated.
 
-UAT status in this report is **not yet signed by a representative user**. This is stated to preserve evidence integrity.
+| ID | Test case | Expected result | Actual result | Result | Defect / action |
+|---|---|---|---|---|---|
+| UAT-01 | Describe an exposed-wiring hazard and review the AI suggestions | Editable category, priority, department and location suggestions | Electrical, Critical and Electrical Unit were recommended; fields were edited and restored successfully | PASS | None |
+| UAT-02 | Check whether the report duplicates an open issue | A relevant match with Join Existing and Create Separate choices | CF-1048 was shown at 78% similarity with both decisions available; Join Existing completed | PASS | None |
+| UAT-03 | Search for the issue and interpret its status | One clear result with current status, priority and ownership | Searching CF-1048 returned one Assigned, Critical issue owned by Electrical Unit | PASS | None |
+| UAT-04 | Use the maintenance workbench to take the next permitted action | Assigned technician can add a note and acknowledge the job | Esi Mensah added an isolation/inspection note; status changed to Acknowledged and the audit history updated | PASS | None |
+| UAT-05 | Verify a completed repair and rate the service | Reporter can review evidence, rate and close the issue | CF-1035 displayed before/after evidence; a five-star rating and feedback were saved and the issue closed | PASS | None |
+| UAT-06 | Ask the assistant for an issue status | Answer must match the stored issue record | The assistant returned CF-1048 as Assigned, Critical and routed to Electrical Unit, matching the issue view | PASS | None |
+
+No blocking acceptance defects were found. The demonstration data was reset after the walkthrough so the examination scenario remains in its original state.
 
 ## 13. Release conclusion
 
-The deployed demonstration passes its automated and live acceptance baseline. It is suitable for examination of the implemented vertical slice. It is not approved for real institutional data until the shared authentication, API, database, storage and security release gates are completed and retested.
+The deployed demonstration passes its automated, live and project-owner acceptance baseline. It is accepted for examination of the implemented vertical slice. It is not approved for real institutional data until the shared authentication, API, database, storage and security release gates are completed and retested.

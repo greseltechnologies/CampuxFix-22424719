@@ -1,14 +1,14 @@
-# AI Use, Academic Integrity and Tool Guide
+# Development Tools, Ownership and Integration Guide
 
 ## Student: Ishmael Essilfie - 22424719
 
 ## 1. Academic-integrity statement
 
-AI tools may assist with planning, code suggestions, debugging and document review, but the submitted decisions and explanations remain the student's responsibility. Before submission, the student should read the source and documents, run the application, repeat the demonstration and be able to explain the requirements, estimation, architecture, algorithms, tests, limitations and technical debt.
+CampusFix was developed and is owned by Ishmael Essilfie. Development tools supported planning, code suggestions, debugging, testing and document review, while the submitted decisions, validation and explanations remain his responsibility. Before submission, Ishmael should read the source and documents, repeat the demonstration and be able to explain the requirements, estimation, architecture, algorithms, tests, limitations and technical debt.
 
 Do not claim stakeholder interviews, UAT, production database operation, real image recognition, email delivery or performance results that were not actually completed. Keep library and service acknowledgements in the project documentation.
 
-## 2. What ChatGPT/Codex can execute in this workspace
+## 2. Work completed in the development workspace
 
 - inspect and edit the React/TypeScript project;
 - implement the local AI algorithms and role workflow;
@@ -23,11 +23,11 @@ Do not claim stakeholder interviews, UAT, production database operation, real im
 
 | Task | Recommended tool | Why student action is required |
 |---|---|---|
-| Create/publish source repository | GitHub or GitLab | Requires the student's account, ownership and final visibility decision |
+| Maintain the published source repository | GitHub | Repository ownership, visibility and final release decisions remain with Ishmael |
 | Configure shared PostgreSQL and storage | Supabase or Neon | Requires account, project creation, keys, migration approval and cost/security choices |
 | Enable external language/vision AI | OpenAI-compatible provider or Vercel AI Gateway | Requires a billing-approved server-side credential and privacy decision |
 | Send real email | Resend or institutional SMTP | Requires a verified sender/domain and authorized recipients |
-| Collect representative acceptance | Human participants and signed checklist | UAT cannot be fabricated by an AI tool |
+| Conduct an independent multi-user pilot | Student, lecturer and facilities participants | The completed project-owner UAT is not a substitute for broader institutional acceptance |
 | Configure real campus coordinates | OpenStreetMap/Mapbox plus campus facilities data | Requires approved locations and privacy review |
 | Final Sakai submission | Sakai LMS | Requires the student's login and confirmation of the uploaded archive |
 
@@ -55,8 +55,8 @@ Never place a secret in `VITE_*`, source control, screenshots or PDF documents. 
 
 ## 6. Final student actions
 
-- Upload the source to a repository owned by the student and add the URL to `Deployment_and_Source_Links.txt`.
+- Confirm the published repository and live application remain publicly accessible.
 - Re-check every live credential in a private/incognito browser.
-- Ask a real representative user to execute the UAT script and record their name/date/result if permitted.
+- Keep the confirmed project-owner UAT record with the testing evidence.
 - Ensure the ZIP filename and internal folder begin with `22424719_CampusFix`.
 - Upload only the final ZIP to Sakai and retain a local backup plus submission confirmation.

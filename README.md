@@ -74,8 +74,8 @@ That change should be implemented behind the existing repository and AI-service 
 
 ## Project evidence
 
-The `docs` folder contains the editable source documentation, including the SRS, test report, technical-debt plan, user manual, API contract, AI/tool guide and viva guide. The `outputs` folder contains the finished submission documents and ZIP.
+The `docs` folder contains the editable source documentation, including the SRS, test report, technical-debt plan, user manual, API contract, development-tool guide and viva guide. The finished PDFs and submission ZIP are supplied separately in the examination package.
 
-## Academic integrity
+## Ownership and academic responsibility
 
-AI assisted with implementation, review and document drafting. The student remains responsible for reviewing the work, publishing the source under a student-owned account, acknowledging tools according to university policy, and explaining every architectural, testing and scope decision during the viva. No interview, signed UAT, shared production database, real notification delivery or external vision result is claimed without evidence.
+CampusFix was developed and is owned by Ishmael Essilfie. Development tools provided bounded assistance with planning, code suggestions, review, testing and document drafting; Ishmael selected the design, reviewed the implementation, deployed the release, confirmed the project-owner acceptance results and remains responsible for explaining every architectural, testing and scope decision during the viva. The documented acceptance is a project-owner session rather than an independent multi-user pilot. No shared production database, real notification delivery or external vision result is claimed without evidence.
